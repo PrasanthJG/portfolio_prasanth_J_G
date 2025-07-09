@@ -168,4 +168,11 @@ All colors MUST be HSL.
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  /* 3D Transform utilities */
+  .transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
 }
