@@ -244,6 +244,112 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Featured Projects Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h3 className="text-4xl font-bold mb-4">
+              Featured <span className="gradient-text">Projects</span>
+            </h3>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Showcasing some of my best work that demonstrates technical expertise and creative problem-solving
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Project 1 - E-Commerce Platform */}
+            <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
+              <CardHeader>
+                <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
+                  <img 
+                    src="/src/assets/ecommerce-project.jpg" 
+                    alt="E-Commerce Platform"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Button size="sm" className="glow-effect">
+                      <ArrowRight className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+                <CardTitle className="text-2xl flex items-center justify-between">
+                  E-Commerce Platform
+                  <ArrowRight className="h-5 w-5 text-primary group-hover:translate-x-1 transition-transform" />
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and payment processing.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"].map((tech) => (
+                    <span key={tech} className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <Button asChild className="w-full group-hover:glow-effect transition-all duration-300">
+                  <Link to="/projects">
+                    View Details <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Project 2 - Task Management App */}
+            <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
+              <CardHeader>
+                <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
+                  <img 
+                    src="/src/assets/task-management.jpg" 
+                    alt="Task Management App"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Button size="sm" className="glow-effect">
+                      <ArrowRight className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+                <CardTitle className="text-2xl flex items-center justify-between">
+                  Task Management App
+                  <ArrowRight className="h-5 w-5 text-accent group-hover:translate-x-1 transition-transform" />
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["React", "Firebase", "Material-UI", "WebSocket"].map((tech) => (
+                    <span key={tech} className="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent border border-accent/20">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <Button asChild className="w-full group-hover:glow-effect transition-all duration-300" variant="outline">
+                  <Link to="/projects">
+                    View Details <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg" variant="outline" className="transform-gpu hover:scale-105 transition-all duration-300">
+              <Link to="/projects">
+                <Code className="mr-2 h-5 w-5" />
+                View All Projects
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">

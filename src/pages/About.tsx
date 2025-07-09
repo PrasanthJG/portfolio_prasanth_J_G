@@ -105,7 +105,7 @@ const About = () => {
               </Card>
             </div>
 
-            {/* Professional Experience */}
+            {/* Professional Experience Timeline */}
             <Card className="card-gradient transform-gpu hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -113,40 +113,70 @@ const About = () => {
                   <span>Professional Experience</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="border-l-2 border-primary pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold text-lg">Senior Full Stack Developer</h4>
-                  <p className="text-primary font-medium">TechCorp Inc. • 2022 - Present</p>
-                  <ul className="text-muted-foreground text-sm mt-2 space-y-1">
-                    <li>• Led development of 15+ web applications using React and Node.js</li>
-                    <li>• Mentored 5 junior developers and established coding standards</li>
-                    <li>• Increased application performance by 40% through optimization</li>
-                  </ul>
-                </div>
-                <div className="border-l-2 border-accent pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-accent rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold text-lg">Full Stack Developer</h4>
-                  <p className="text-accent font-medium">StartupXYZ • 2020 - 2022</p>
-                  <ul className="text-muted-foreground text-sm mt-2 space-y-1">
-                    <li>• Built scalable web applications from scratch</li>
-                    <li>• Collaborated with design team to implement pixel-perfect UIs</li>
-                    <li>• Integrated third-party APIs and payment systems</li>
-                  </ul>
-                </div>
-                <div className="border-l-2 border-muted pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-muted rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold text-lg">Junior Developer</h4>
-                  <p className="text-muted-foreground font-medium">WebAgency Pro • 2019 - 2020</p>
-                  <ul className="text-muted-foreground text-sm mt-2 space-y-1">
-                    <li>• Developed responsive websites using HTML, CSS, and JavaScript</li>
-                    <li>• Learned modern frameworks and development practices</li>
-                  </ul>
+              <CardContent>
+                <div className="relative">
+                  {/* Timeline Line */}
+                  <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-muted"></div>
+                  
+                  <div className="space-y-8">
+                    {/* Current Position */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg animate-pulse"></div>
+                      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg text-primary">Senior Full Stack Developer</h4>
+                          <span className="text-sm text-primary font-medium">2022 - Present</span>
+                        </div>
+                        <p className="text-primary font-medium mb-2">TechCorp Inc.</p>
+                        <ul className="text-muted-foreground text-sm space-y-1">
+                          <li>• Led development of 15+ web applications using React and Node.js</li>
+                          <li>• Mentored 5 junior developers and established coding standards</li>
+                          <li>• Increased application performance by 40% through optimization</li>
+                          <li>• Architected scalable microservices for enterprise clients</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Previous Position */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-accent rounded-full border-4 border-background shadow-md"></div>
+                      <div className="bg-accent/5 border border-accent/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg text-accent">Full Stack Developer</h4>
+                          <span className="text-sm text-accent font-medium">2020 - 2022</span>
+                        </div>
+                        <p className="text-accent font-medium mb-2">StartupXYZ</p>
+                        <ul className="text-muted-foreground text-sm space-y-1">
+                          <li>• Built scalable web applications from scratch</li>
+                          <li>• Collaborated with design team to implement pixel-perfect UIs</li>
+                          <li>• Integrated third-party APIs and payment systems</li>
+                          <li>• Reduced server costs by 30% through code optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* First Position */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-muted rounded-full border-4 border-background shadow-md"></div>
+                      <div className="bg-muted/5 border border-muted/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg">Junior Developer</h4>
+                          <span className="text-sm text-muted-foreground font-medium">2019 - 2020</span>
+                        </div>
+                        <p className="text-muted-foreground font-medium mb-2">WebAgency Pro</p>
+                        <ul className="text-muted-foreground text-sm space-y-1">
+                          <li>• Developed responsive websites using HTML, CSS, and JavaScript</li>
+                          <li>• Learned modern frameworks and development practices</li>
+                          <li>• Contributed to team projects and gained industry experience</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Education */}
+            {/* Education Timeline */}
             <Card className="card-gradient transform-gpu hover:scale-105 transition-all duration-300">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -154,22 +184,69 @@ const About = () => {
                   <span>Education & Certifications</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="border-l-2 border-accent pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-accent rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold">Computer Science, B.S.</h4>
-                  <p className="text-accent font-medium">University of Technology • 2016 - 2020</p>
-                  <p className="text-muted-foreground text-sm">Summa Cum Laude, GPA: 3.9/4.0</p>
-                </div>
-                <div className="border-l-2 border-primary pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-primary rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold">AWS Certified Solutions Architect</h4>
-                  <p className="text-primary font-medium">Amazon Web Services • 2023</p>
-                </div>
-                <div className="border-l-2 border-muted pl-4 relative">
-                  <div className="absolute w-3 h-3 bg-muted rounded-full -left-2 top-1"></div>
-                  <h4 className="font-semibold">Google Cloud Professional Developer</h4>
-                  <p className="text-muted-foreground font-medium">Google Cloud • 2022</p>
+              <CardContent>
+                <div className="relative">
+                  {/* Timeline Line */}
+                  <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-primary to-muted"></div>
+                  
+                  <div className="space-y-8">
+                    {/* Recent Certification */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg"></div>
+                      <div className="bg-accent/5 border border-accent/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg text-accent">AWS Certified Solutions Architect</h4>
+                          <span className="text-sm text-accent font-medium">2023</span>
+                        </div>
+                        <p className="text-accent font-medium mb-2">Amazon Web Services</p>
+                        <p className="text-muted-foreground text-sm">Professional level certification demonstrating expertise in designing distributed systems on AWS</p>
+                      </div>
+                    </div>
+
+                    {/* Google Certification */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-md"></div>
+                      <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg text-primary">Google Cloud Professional Developer</h4>
+                          <span className="text-sm text-primary font-medium">2022</span>
+                        </div>
+                        <p className="text-primary font-medium mb-2">Google Cloud Platform</p>
+                        <p className="text-muted-foreground text-sm">Expertise in designing, building, and deploying applications on Google Cloud Platform</p>
+                      </div>
+                    </div>
+
+                    {/* University Education */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-muted rounded-full border-4 border-background shadow-md"></div>
+                      <div className="bg-muted/5 border border-muted/20 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg">Computer Science, B.S.</h4>
+                          <span className="text-sm text-muted-foreground font-medium">2016 - 2020</span>
+                        </div>
+                        <p className="text-muted-foreground font-medium mb-2">University of Technology</p>
+                        <div className="text-muted-foreground text-sm space-y-1">
+                          <p>• Summa Cum Laude, GPA: 3.9/4.0</p>
+                          <p>• Dean's List all semesters</p>
+                          <p>• Specialized in Software Engineering and Database Systems</p>
+                          <p>• Senior capstone project: Real-time collaboration platform</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* High School */}
+                    <div className="relative pl-14">
+                      <div className="absolute left-4 top-1 w-4 h-4 bg-muted/50 rounded-full border-4 border-background shadow-sm"></div>
+                      <div className="bg-muted/5 border border-muted/10 rounded-lg p-4 transform-gpu hover:scale-105 transition-all duration-300">
+                        <div className="flex items-center justify-between mb-2">
+                          <h4 className="font-bold text-lg">High School Diploma</h4>
+                          <span className="text-sm text-muted-foreground font-medium">2012 - 2016</span>
+                        </div>
+                        <p className="text-muted-foreground font-medium mb-2">Tech High School</p>
+                        <p className="text-muted-foreground text-sm">Valedictorian, President of Computer Science Club</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
