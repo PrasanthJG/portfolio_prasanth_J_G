@@ -93,7 +93,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -105,9 +105,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid xl:grid-cols-3 gap-12">
           {/* Contact Form */}
-          <div className="animate-slide-in">
+          <div className="xl:col-span-2 animate-slide-in">
             <Card className="card-gradient">
               <CardHeader>
                 <CardTitle className="text-2xl">Send me a message</CardTitle>
@@ -177,6 +177,28 @@ const Contact = () => {
                     Send Message
                   </Button>
                 </form>
+              </CardContent>
+            </Card>
+
+            {/* Location Map */}
+            <Card className="card-gradient mt-8">
+              <CardHeader>
+                <CardTitle className="text-2xl">Our Location</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="w-full h-64 sm:h-80 bg-muted rounded-lg overflow-hidden border border-border">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0195073081133!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1628623456789!5m2!1sen!2sus"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="San Francisco Location"
+                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                  ></iframe>
+                </div>
               </CardContent>
             </Card>
           </div>
