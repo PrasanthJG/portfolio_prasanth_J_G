@@ -1,4 +1,5 @@
-import { ArrowRight, Github, Linkedin, Mail, Code, Palette, MessageSquare, User, Briefcase, Award, Globe, Zap } from "lucide-react";
+// src/pages/Home.tsx
+import { ArrowRight, Github, Linkedin, Mail, Code, Palette, MessageSquare, User, Briefcase, Award, Globe, Zap, Music } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,77 +8,118 @@ const Home = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
-              Hi, I'm{" "}
-              <span className="gradient-text">Alex Johnson</span>
-            </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8">
-              Full Stack Developer & UI/UX Designer
-            </h2>
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              I create beautiful, functional digital experiences that solve real-world problems.
-              Passionate about clean code, modern design, and innovative solutions.
-            </p>
-          </div>
-
-          <div className="animate-scale-in flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button asChild size="lg" className="glow-effect">
-              <Link to="/projects">
-                View My Work <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link to="/contact">Get In Touch</Link>
-            </Button>
-          </div>
-
-          {/* Social Links */}
-          <div className="animate-slide-in flex justify-center space-x-6">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
-            >
-              <Github className="h-6 w-6" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
-            >
-              <Linkedin className="h-6 w-6" />
-            </a>
-            <a
-              href="mailto:alex@example.com"
-              className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
-            >
-              <Mail className="h-6 w-6" />
-            </a>
-          </div>
+      
+<section className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    {/* Right Column becomes Top on mobile */}
+    <div className="relative flex items-center justify-center order-1 md:order-2">
+      {/* Mobile / tablet circular 3D image */}
+      <div className="md:hidden relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden 
+        bg-gradient-to-tr from-purple-500 via-blue-500 to-green-500 p-[4px] animate-spin-slow">
+        <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
+          <img 
+            src="/src/assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview2222.png" 
+            alt="Prasanth J G"
+            className="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500"
+          />
         </div>
+      </div>
 
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-glow-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/10 rounded-full blur-xl animate-glow-pulse delay-1000"></div>
-        </div>
-      </section>
+      {/* Desktop image normal */}
+      <div className="hidden md:block">
+        <img 
+          src="/src/assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview.png" 
+          alt="Prasanth J G"
+          className="w-[300px] h-auto"
+        />
+      </div>
+    </div>
+
+    {/* Left Column - Text Content */}
+    <div className="
+  text-center md:text-left        /* center text on mobile, left on md+ */
+  animate-fade-in order-2 md:order-1
+">
+  <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+    Hi, I'm <br/>
+    <span className="gradient-text">Prasanth J G</span>
+  </h1>
+
+  <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8">
+    Front-End Developer | React Developer
+    {/* Front-End Developer | React Specialist */}
+  </h2>
+
+  <p className="text-lg text-muted-foreground mb-12 max-w-2xl leading-relaxed mx-auto md:mx-0">
+    I create responsive, user-friendly web applications with React.js and modern JavaScript.
+    Passionate about clean code, intuitive interfaces, and performance optimization.
+  </p>
+
+  <div className="
+    animate-scale-in flex flex-col sm:flex-row gap-4 
+    items-center md:items-start justify-center md:justify-start mb-12
+  ">
+    <Button asChild size="lg" className="glow-effect">
+      <Link to="/projects">
+        View My Work <ArrowRight className="ml-2 h-5 w-5" />
+      </Link>
+    </Button>
+    <Button asChild variant="outline" size="lg">
+      <Link to="/contact">Get In Touch</Link>
+    </Button>
+  </div>
+
+  {/* Social Links */}
+  <div className="
+    animate-slide-in flex justify-center md:justify-start 
+    space-x-6
+  ">
+    <a
+      href="https://github.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
+    >
+      <Github className="h-6 w-6" />
+    </a>
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
+    >
+      <Linkedin className="h-6 w-6" />
+    </a>
+    <a
+      href="mailto:prasanthjg56@gmail.com"
+      className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
+    >
+      <Mail className="h-6 w-6" />
+    </a>
+  </div>
+</div>
+
+  </div>
+
+  {/* Background floating elements */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-glow-pulse"></div>
+    <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/10 rounded-full blur-xl animate-glow-pulse delay-1000"></div>
+    <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-blue-500/10 rounded-full blur-lg animate-float delay-2000"></div>
+  </div>
+</section>
 
       {/* Quick About */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-8">
-            Turning Ideas Into <span className="gradient-text">Reality</span>
+            Turning Designs Into <span className="gradient-text">Reality</span>
           </h3>
           <p className="text-lg text-muted-foreground leading-relaxed mb-16">
-            With over 5 years of experience in web development and design, I specialize in creating
-            modern, responsive applications using React, TypeScript, and cutting-edge technologies.
-            I believe in writing clean, maintainable code and designing intuitive user experiences.
+            With 1+ years of experience in frontend development, I specialize in creating
+            responsive web applications using React, JavaScript, and modern CSS frameworks.
+            I transform design mockups into pixel-perfect, interactive interfaces with optimal 
+            performance and cross-browser compatibility.
           </p>
         </div>
       </section>
@@ -90,7 +132,7 @@ const Home = () => {
               What I <span className="gradient-text">Do</span>
             </h3>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              From concept to deployment, I bring your digital vision to life with modern technologies and creative solutions.
+              From concept to deployment, I build responsive interfaces with clean code and modern technologies.
             </p>
           </div>
 
@@ -105,7 +147,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  5+ years of experience in full-stack development with a passion for creating exceptional digital experiences.
+                  1+ years of frontend development experience specializing in React.js and responsive design.
                 </p>
                 <Button asChild variant="outline" size="sm" className="w-full group-hover:border-primary transition-colors">
                   <Link to="/about">Learn More</Link>
@@ -123,7 +165,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  50+ successful projects including e-commerce platforms, SaaS applications, and modern web apps.
+                  5+ successful projects including web applications, admin panels, and WordPress sites.
                 </p>
                 <Button asChild variant="outline" size="sm" className="w-full group-hover:border-accent transition-colors">
                   <Link to="/projects">View Portfolio</Link>
@@ -141,7 +183,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Expert in React, TypeScript, Node.js, and modern web technologies with cloud deployment experience.
+                  Expert in React.js, JavaScript, HTML/CSS, Bootstrap, and responsive web design.
                 </p>
                 <Button asChild variant="outline" size="sm" className="w-full group-hover:border-primary transition-colors">
                   <Link to="/skills">Explore Skills</Link>
@@ -159,7 +201,7 @@ const Home = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Ready to start your next project? Let's discuss how we can bring your ideas to life.
+                  Interested in collaborating? Let's discuss how I can contribute to your project.
                 </p>
                 <Button asChild variant="outline" size="sm" className="w-full group-hover:border-accent transition-colors">
                   <Link to="/contact">Contact Me</Link>
@@ -186,27 +228,27 @@ const Home = () => {
             <Card className="card-gradient hover-lift transform-gpu transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
                 <Briefcase className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h4 className="text-2xl font-bold mb-2">Senior Developer</h4>
-                <p className="text-muted-foreground mb-4">Leading development teams and architecting scalable solutions</p>
-                <div className="text-3xl font-bold gradient-text">2022-Present</div>
+                <h4 className="text-2xl font-bold mb-2">Performance Boost</h4>
+                <p className="text-muted-foreground mb-4">Improved website performance by 40% through optimization techniques</p>
+                <div className="text-3xl font-bold gradient-text">40%</div>
               </CardContent>
             </Card>
 
             <Card className="card-gradient hover-lift transform-gpu transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
                 <Award className="h-12 w-12 text-accent mx-auto mb-4" />
-                <h4 className="text-2xl font-bold mb-2">AWS Certified</h4>
-                <p className="text-muted-foreground mb-4">Solutions Architect with cloud expertise and best practices</p>
-                <div className="text-3xl font-bold gradient-text">2023</div>
+                <h4 className="text-2xl font-bold mb-2">User Engagement</h4>
+                <p className="text-muted-foreground mb-4">Increased user engagement by 20% through responsive UI design</p>
+                <div className="text-3xl font-bold gradient-text">20%</div>
               </CardContent>
             </Card>
 
             <Card className="card-gradient hover-lift transform-gpu transition-all duration-300 hover:scale-105">
               <CardContent className="p-8 text-center">
                 <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h4 className="text-2xl font-bold mb-2">Global Impact</h4>
-                <p className="text-muted-foreground mb-4">Projects used by thousands of users across multiple countries</p>
-                <div className="text-3xl font-bold gradient-text">50K+ Users</div>
+                <h4 className="text-2xl font-bold mb-2">Project Delivery</h4>
+                <p className="text-muted-foreground mb-4">Completed 5 WordPress projects within one month</p>
+                <div className="text-3xl font-bold gradient-text">5 Projects</div>
               </CardContent>
             </Card>
           </div>
@@ -220,11 +262,11 @@ const Home = () => {
             Technology <span className="gradient-text">Stack</span>
           </h3>
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            I work with cutting-edge technologies to build modern, scalable, and performant applications
+            I work with modern frontend technologies to build responsive, performant applications
           </p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {["React", "TypeScript", "Node.js", "AWS", "PostgreSQL", "Docker"].map((tech, index) => (
+            {["React", "JavaScript", "HTML5", "CSS3", "Bootstrap", "GitHub"].map((tech, index) => (
               <div
                 key={tech}
                 className="p-6 rounded-lg card-gradient hover-lift transform-gpu transition-all duration-300 hover:scale-110 hover:rotate-3"
@@ -252,22 +294,18 @@ const Home = () => {
               Featured <span className="gradient-text">Projects</span>
             </h3>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Showcasing some of my best work that demonstrates technical expertise and creative problem-solving
+              Showcasing projects that demonstrate my technical expertise and problem-solving skills
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Project 1 - E-Commerce Platform */}
+            {/* Project 1 - Car Wash Service App */}
             <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
               <CardHeader>
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
-                  <img 
-                    src="/src/assets/ecommerce-project.jpg" 
-                    alt="E-Commerce Platform"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src="/src/assets/Screenshot 2025-10-08 004842.png"/></div>
                   <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">
-                    E-Commerce Platform
+                    The Future Med Service App
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -277,16 +315,16 @@ const Home = () => {
                   </div>
                 </div>
                 <CardTitle className="text-2xl flex items-center justify-between">
-                  E-Commerce Platform
+                 TheFutureMed Healthcare Platform
                   <ArrowRight className="h-5 w-5 text-primary group-hover:translate-x-1 transition-transform" />
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and payment processing.
+                  Comprehensive medical education and professional development platform with AI integration.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["React", "TypeScript", "Node.js", "PostgreSQL", "Stripe"].map((tech) => (
+                  {["React", "Bootstrap", "API Integration", "Responsive"].map((tech) => (
                     <span key={tech} className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary border border-primary/20">
                       {tech}
                     </span>
@@ -300,17 +338,13 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            {/* Project 2 - Task Management App */}
+            {/* Project 2 - WordPress Projects */}
             <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
               <CardHeader>
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
-                  <img 
-                    src="/src/assets/task-management.jpg" 
-                    alt="Task Management App"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src="/src/assets/Screenshot 2025-10-08 004208.png"/></div>
                   <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">
-                    Task Management App
+                    WordPress Projects
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -320,16 +354,16 @@ const Home = () => {
                   </div>
                 </div>
                 <CardTitle className="text-2xl flex items-center justify-between">
-                  Task Management App
+                  WordPress Development
                   <ArrowRight className="h-5 w-5 text-accent group-hover:translate-x-1 transition-transform" />
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.
+                  Multiple WordPress projects including Arabi ksa, St Mary, Consultancy, Medshop, Champion.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["React", "Firebase", "Material-UI", "WebSocket"].map((tech) => (
+                  {["WordPress", "Theme Customization", "Performance", "Responsive"].map((tech) => (
                     <span key={tech} className="px-3 py-1 text-xs rounded-full bg-accent/10 text-accent border border-accent/20">
                       {tech}
                     </span>
@@ -363,7 +397,7 @@ const Home = () => {
             Ready to Build Something <span className="gradient-text">Amazing?</span>
           </h3>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's collaborate and turn your vision into a stunning digital reality that exceeds expectations.
+            Let's collaborate and create a responsive, user-friendly web experience that exceeds expectations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="glow-effect transform-gpu hover:scale-105 transition-all duration-300">
