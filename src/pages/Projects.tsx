@@ -1847,13 +1847,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import video1 from "../video/Isha's GMP Consultancy – Turnkey projects & FDA audit & Compliance - Google Chrome 2025-03-18 18-08-17.mp4";
-import video2 from "../video/Medorbis AI — Medical Learning & Clinical Assistant - Google Chrome 2025-10-07 23-42-08.mp4";
-import video3 from "../video/PMHS Tech Solutions - Google Chrome 2025-10-07 23-47-43.mp4";
-import video4 from "../video/St. Mary’s Chikmagalur – Best PU College in Chikmagalur and 5 more pages - Personal - Microsoft​ Edge 2025-10-05 18-31-27.mp4";
-import video5 from "../video/Subscription Plans - Google Chrome 2025-10-07 23-45-38.mp4";
-import video6 from "../video/The Future Med - A Heaven for Healthcare Heros - Google Chrome 2025-10-07 23-39-40.mp4";
-import video7 from "../video/Welcome _ Medorbis _ Chat Application - Google Chrome 2025-10-07 23-41-11.mp4";
+import video1 from "/src/video/Isha's GMP Consultancy – Turnkey projects & FDA audit & Compliance - Google Chrome 2025-03-18 18-08-17.mp4";
+import video2 from "/src/video/Medorbis AI — Medical Learning & Clinical Assistant - Google Chrome 2025-10-07 23-42-08.mp4";
+import video3 from "/src/video/PMHS Tech Solutions - Google Chrome 2025-10-07 23-47-43.mp4";
+import video4 from "/src/video/St. Mary’s Chikmagalur – Best PU College in Chikmagalur and 5 more pages - Personal - Microsoft​ Edge 2025-10-05 18-31-27.mp4";
+import video5 from "/src/video/Subscription Plans - Google Chrome 2025-10-07 23-45-38.mp4";
+import video6 from "/src/video/The Future Med - A Heaven for Healthcare Heros - Google Chrome 2025-10-07 23-39-40.mp4";
+import video7 from "/src/video/Welcome _ Medorbis _ Chat Application - Google Chrome 2025-10-07 23-41-11.mp4";
 
 // Define project interface
 interface Project {
