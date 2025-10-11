@@ -8,12 +8,11 @@
     "dev": "vite",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-
-"start": "vite start",
-    "build": "vite build",  
-      "preview":"vite preview",
-"predeploy": "npm run build",
-"deploy": "gh-pages -d dist"
+    "start": "vite start",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -48,12 +47,14 @@
     "@react-three/drei": "^10.5.1",
     "@react-three/fiber": "^9.2.0",
     "@tanstack/react-query": "^5.56.2",
+    "@types/react-google-picker": "^0.1.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.3.0",
     "framer-motion": "^12.23.6",
+    "google-drive-picker": "^1.1.29",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.462.0",
     "next-themes": "^0.3.0",
