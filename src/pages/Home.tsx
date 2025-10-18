@@ -74,16 +74,16 @@ const Home = () => {
     animate-slide-in flex justify-center md:justify-start 
     space-x-6
   ">
-    <a
+    {/* <a
       href="https://github.com"
       target="_blank"
       rel="noopener noreferrer"
       className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"
     >
       <Github className="h-6 w-6" />
-    </a>
+    </a> */}
     <a
-      href="https://linkedin.com"
+      href="https://www.linkedin.com/in/prasanth2409/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-muted-foreground hover:text-primary transition-colors p-2 hover:scale-110 transition-transform"

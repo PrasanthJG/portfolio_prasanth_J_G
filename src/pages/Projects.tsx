@@ -371,7 +371,7 @@ const Projects = () => {
   detailedDescription: "Mint District is a full-featured car wash service application that enables customers to easily book car wash services, select packages, and manage appointments. The platform includes admin dashboard for service management, employee scheduling, and business analytics.",
   image: "/src/assets/car-wash.jpg",
   technologies: ["React", "Bootstrap", "Node.js", "MongoDB", "REST API", "Responsive Design", "Payment Integration"],
-  liveUrl: "https://mintdistrict.example.com",
+  liveUrl: "https://mintdistrict.com",
   githubUrl: "https://github.com/username/mint-district",
   date: "2023 - 2024",
   featured: false,

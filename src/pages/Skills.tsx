@@ -5,14 +5,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import image1 from "../assets/CERTIFICATE_LANDING_PAGE~7TDAYFXE1LCS.jpeg"
-import image2 from "../assets/image2.png"
-import image3 from "../assets/Prasanth_G_4225383_page-0001.jpg"
-import image4 from "../assets/Prasanth_G_4203023 (1)_page-0001.jpg"
-import image5 from "../assets/Prasanth_G_4202978_page-0001.jpg"
-import image6 from "../assets/Prasanth_G_3961858_page-0001.jpg"
-import image7 from "../assets/certificate_page-0001.jpg"
-import image8 from "../assets/Profile _ freeCodeCamp.org_page-0001.jpg"
+import image1 from "@/assets/CERTIFICATE_LANDING_PAGE~7TDAYFXE1LCS.jpeg"
+import image2 from "@/assets/image2.png"
+import image3 from "@/assets/Prasanth_G_4225383_page-0001.jpg"
+import image4 from "@/assets/Prasanth_G_4203023 (1)_page-0001.jpg"
+import image5 from "@/assets/Prasanth_G_4202978_page-0001.jpg"
+import image6 from "@/assets/Prasanth_G_3961858_page-0001.jpg"
+import image7 from "@/assets/certificate_page-0001.jpg"
+import image8 from "@/assets/Profile _ freeCodeCamp.org_page-0001.jpg"
 
 type Certification = {
   id: number;
