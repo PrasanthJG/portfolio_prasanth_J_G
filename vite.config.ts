@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   // base: "/portfolio_prasanth_J_G", // 👈 Must match your GitHub repo name exactly
   server: {
     host: "::",
-    port: 8080,
+    port: 8081,
   },
   plugins: [
     react(),
