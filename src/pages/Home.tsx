@@ -3,6 +3,10 @@ import { ArrowRight, Github, Linkedin, Mail, Code, Palette, MessageSquare, User,
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import image12 from "../assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview.png"
+import image11 from "../assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview2222.png"
+import image14 from "../assets/Screenshot 2025-10-08 004208.png"
+import image13 from "../assets/Screenshot 2025-10-08 004842.png"
 
 const Home = () => {
   return (
@@ -18,7 +22,7 @@ const Home = () => {
         bg-gradient-to-tr from-purple-500 via-blue-500 to-green-500 p-[4px] animate-spin-slow">
         <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
           <img 
-            src="/src/assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview2222.png" 
+            src={image11} 
             alt="Prasanth J G"
             className="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500"
           />
@@ -28,7 +32,7 @@ const Home = () => {
       {/* Desktop image normal */}
       <div className="hidden md:block">
         <img 
-          src="/src/assets/Gemini_Generated_Image_9s5m0i9s5m0i9s5m-removebg-preview.png" 
+          src={image12} 
           alt="Prasanth J G"
           className="w-[300px] h-auto"
         />
@@ -303,7 +307,7 @@ const Home = () => {
             <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
               <CardHeader>
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src="/src/assets/Screenshot 2025-10-08 004842.png"/></div>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src={image13}/></div>
                   <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">
                     The Future Med Service App
                   </div>
@@ -342,7 +346,7 @@ const Home = () => {
             <Card className="card-gradient hover-lift group transform-gpu transition-all duration-500 hover:scale-105">
               <CardHeader>
                 <div className="aspect-video bg-muted rounded-lg mb-4 overflow-hidden relative">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src="/src/assets/Screenshot 2025-10-08 004208.png"/></div>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" ><img src={image14}/></div>
                   <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-2 rounded-lg text-sm font-medium backdrop-blur-sm">
                     WordPress Projects
                   </div>
