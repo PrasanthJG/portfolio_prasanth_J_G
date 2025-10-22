@@ -45,16 +45,16 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
   ];
 
   const socialLinks = [
-    {
-      icon: Github,
-      name: "GitHub",
-      url: "https://github.com",
-      username: "@prasanthjg"
-    },
+    // {
+    //   icon: Github,
+    //   name: "GitHub",
+    //   url: "https://github.com",
+    //   username: "@prasanthjg"
+    // },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/prasanth2409/",
       username: "/in/prasanthjg"
     }
   ];
