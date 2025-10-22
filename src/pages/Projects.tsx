@@ -6,6 +6,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Link } from "react-router-dom";
+import image21 from "../assets/Screenshot 2025-10-08 004304.png"
+import image22 from "../assets/Screenshot 2025-10-08 004208.png"
+import image23 from "../assets/Screenshot 2025-10-08 004652.png"
+import image24 from "../assets/Screenshot 2025-09-12 230521.png"
+import image25 from "../assets/Screenshot 2025-09-12 230226.png"
 
 // Define project interface
 interface Project {
@@ -69,7 +74,7 @@ const Projects = () => {
       title: "St Mary's Educational Institution",
       description: "Comprehensive educational website with student portal, course management, and event systems.",
       detailedDescription: "Built a full-featured educational institution website with integrated learning management system, student portal, event calendar, and faculty management. The platform serves students, parents, and faculty with tailored interfaces for each user type.",
-      image: "/src/assets/Screenshot 2025-10-08 004304.png",
+      image: image21,
       video: "https://drive.google.com/file/d/1S8WzOFUc_Ijunoq8UrdR_mW44B3D5O5G/view?usp=sharing",
       // video: video4,
       technologies: ["WordPress", "LearnDash", "Events Calendar", "Student Portal", "Elementor"],
@@ -101,7 +106,7 @@ const Projects = () => {
       title: "Isha's GMP Consultancy",
       description: "Professional consultancy website with service showcases, case studies, and client management.",
       detailedDescription: "Developed a corporate website for a GMP consultancy firm featuring service showcases, detailed case studies, client testimonial systems, and lead generation forms. The design emphasizes professionalism and trust-building elements.",
-      image: "/src/assets/Screenshot 2025-10-08 004208.png",
+      image: image22,
       video: "https://drive.google.com/file/d/1Nbqh0pH2HqXWFAPhY4kLzm-nG3mUpArY/view?usp=sharing",
       // video: video1,
       technologies: ["WordPress", "Elementor Pro", "SEO Optimization", "Contact Forms", "CRM Integration"],
@@ -133,7 +138,7 @@ const Projects = () => {
       title: "MedOrbis Healthcare Platform",
       description: "Advanced healthcare platform with AI integration and medical learning systems.",
       detailedDescription: "Comprehensive medical platform integrating AI technology with healthcare workflows, providing tools for diagnosis support, patient management, medical research, and professional education. Features real-time chat, AI assistance, and subscription management.",
-      image: "/src/assets/Screenshot 2025-10-08 004652.png",
+      image: image23,
       video: "https://drive.google.com/file/d/1y4Vy0zel9CXWgVo-CjKZrEhDwcOzn0ne/view?usp=sharing",
       // video: video2,
       technologies: ["React", "Redux", "GraphQL", "TypeScript", "AI Integration", "WebSockets"],
@@ -166,7 +171,7 @@ const Projects = () => {
       title: "MedOrbis AI Assistant",
       description: "AI-powered medical assistant providing intelligent healthcare responses and support.",
       detailedDescription: "Advanced AI assistant specifically designed for the medical field, leveraging natural language processing and machine learning to provide accurate healthcare information, diagnostic support, and clinical assistance to medical professionals.",
-      image: "/src/assets/Screenshot 2025-09-12 230521.png",
+      image: image24,
       video: "https://drive.google.com/file/d/1gtiW0NeDFavC0ELffBF3c7gQ2a5oaPAn/view?usp=sharing",
       // video: video7,
       technologies: ["React", "AI Integration", "WebSockets", "Tailwind CSS", "Node.js", "Real-time Chat"],
@@ -198,7 +203,7 @@ const Projects = () => {
       title: "PMHS Tech Solutions",
       description: "Corporate website for technology solutions company showcasing services and expertise.",
       detailedDescription: "Modern, responsive corporate website for PMHS Tech Solutions featuring service overviews, technical expertise showcases, case studies, client testimonials, and integrated contact systems. The design emphasizes technical capability and professional trust.",
-      image: "/src/assets/Screenshot 2025-09-12 230226.png",
+      image: image25,
       video: "https://drive.google.com/file/d/1geSZoEDQz4SG6Z1jZilM7EXo5mg8AwdI/view?usp=sharing",
       // video: video3,
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite", "SEO"],

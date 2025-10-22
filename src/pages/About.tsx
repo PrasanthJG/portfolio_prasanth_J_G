@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion, Variants } from "framer-motion";
 import { useEffect, useRef } from "react";
 import aboutImage from "../assets/about.png"
+import resumePdf from "../assets/Prasanth_Resume.pdf";
 
 const About = () => {
   const containerRef = useRef(null);
@@ -54,6 +55,20 @@ const About = () => {
         ease: "easeInOut"
       }
     })
+  };
+
+  const handleDownload = () => {
+    try {
+      // Create a temporary anchor element
+      const link = document.createElement("a");
+      link.href = resumePdf;
+      link.download = "Prasanth_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error downloading resume:", error);
+    }
   };
 
   return (
@@ -203,7 +218,7 @@ const About = () => {
               </div>
 
               <div className="flex flex-wrap gap-4 mt-8">
-                <Button className="glow-effect transform-gpu hover:scale-105 transition-all duration-300">
+                <Button onClick={handleDownload} className="glow-effect transform-gpu hover:scale-105 transition-all duration-300">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </Button>
