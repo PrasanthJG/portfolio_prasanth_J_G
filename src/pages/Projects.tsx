@@ -11,6 +11,8 @@ import image22 from "../assets/Screenshot 2025-10-08 004208.png"
 import image23 from "../assets/Screenshot 2025-10-08 004652.png"
 import image24 from "../assets/Screenshot 2025-09-12 230521.png"
 import image25 from "../assets/Screenshot 2025-09-12 230226.png"
+import image26 from "../assets/Screenshot 2025-10-08 004748.png"
+import image27 from "../assets/Screenshot 2025-10-08 004842.png"
 
 // Define project interface
 interface Project {
@@ -299,7 +301,7 @@ const Projects = () => {
   title: "Callvante AI Voice Platform",
   description: "Next-generation SaaS platform for intelligent AI voice agents handling customer engagement and business automation.",
   detailedDescription: "Callvante is a comprehensive voice automation platform that empowers businesses with AI voice agents capable of handling bookings, rescheduling, promotions, and customer engagement 24/7. The platform features multi-language support, calendar integrations, and industry-specific solutions for healthcare, restaurants, real estate, and more.",
-  image: "/src/assets/Screenshot 2025-10-08 004748.png",
+  image: image26,
   video: "https://drive.google.com/file/d/157yctAIUXQCyrstaxQMT5nP49kCp1HZy/view?usp=sharing", // You can add a video reference if available
   // video: video5, // You can add a video reference if available
   technologies: ["React", "Node.js", "WebRTC", "AI/ML", "WebSockets", "TypeScript", "Cloud Integration"],
@@ -334,7 +336,7 @@ const Projects = () => {
   title: "TheFutureMed Healthcare Platform",
   description: "Comprehensive medical education and professional development platform with AI integration.",
   detailedDescription: "Advanced healthcare platform empowering medical professionals through technology and community. Features include AI-powered medical assistance, comprehensive e-learning systems, interactive e-seminars, job portal, medical communities, and professional networking. The platform serves as a complete ecosystem for medical education, career advancement, and professional collaboration.",
-  image: "/src/assets/Screenshot 2025-10-08 004842.png",
+  image: image27,
   video: "https://drive.google.com/file/d/1nXZRTFPnugh9TeExbJyX0YUgh2uA85Zl/view?usp=sharing",
   // video: video6,
   technologies: ["React", "Redux", "GraphQL", "TypeScript", "AI Integration", "WebSockets", "Real-time Chat", "Payment Integration"],
